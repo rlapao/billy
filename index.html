@@ -50,14 +50,45 @@
     </div>
   	
   	<div class="container">
-  		<h1>Billy by Premium Minds</h1>
+  		<h1>Billy</h1>
+      <br>
   		<p>
-  		(a adicionar) Introdução acerca do que é o Billy<br>
-  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
-nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-  		</p>
-  	
-  	<hr>
+      Billy is a Java library developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>, whose aim is to provide applications for creating and managing invoices, as well as allowing their export in different file types. Billy also allows the creation and export of SAF-T(Sandart Audit File for Tax purposes) files.
+      </p>
+      <p>
+      Billy is at version 1.0, now beginning to be available in the open source community.
+      </p>
+      <br>
+      <p class="text-error"> <b>Billy is currently still being developed, so it may still contain errors!</b> </p>
+
+        <section id="getting-started">
+          <div class="page-header">
+            <h3>Getting Started</h3>
+
+            A complete <a href="getStarted.html">getting started</a> guide is available, but for those looking to start running quickly, make sure you have installed <a href="http://www.java.com/en/">Java 7</a>, at least <a href="http://www.postgresql.org/">Postgres 9.1</a>, <a href="http://git-scm.com/">Git</a>, and <a href="http://maven.apache.org/">Maven 2</a>.
+            <br><br>
+              <section>
+                <b>Download</b>
+                <p> After you have all the necessary software, you need to download the Billy aplication, in order to do that you have two options: <br>
+                To get the project you must have to be registered at <a href="http://git-scm.com/">Git</a>
+                 <ol>
+                    <li>Download the latest stable release,as a zip file from <a href="https://github.com/premium-minds/billy">GitHub</a></li>
+                    <li>Clone the git repository:
+                    </li>
+                  </ol>
+                      <pre>git clone https://github.com/premium-minds/billy.git</pre> and checkout the release that you want.
+                 </p>  
+              </section>
+
+              <section>
+                <b>Install</b>
+                <p>To install Billy, you go the folder that you have just downloaded, build the project, in eache folder inside billy's folder execute:<br>
+                  <pre>mvn install</pre>
+
+                  After you do this you can start to develop your application, using Billy.
+                </p>
+              </section>        
+        </section>
   	
   	<footer>
   		<p> Developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a></p>
