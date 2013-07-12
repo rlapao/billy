@@ -23,6 +23,6 @@ echo "Starting to push the Javadoc to Git....."
 git add Javadoc
 git commit -a
 git push origin gh-pages
-
+echo "====================================================================================================================="
 echo "SUCESS the Javadoc of Billy is now updated!"
 
