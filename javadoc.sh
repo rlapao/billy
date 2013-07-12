@@ -17,5 +17,5 @@ echo "changing to branch gh-pages"
 git checkout gh-pages
 
 echo "Copying Javadoc to Javadoc folder from the temporary folder"
-cp -r  tmp/DirAux/. Javadoc/
+cp -r  /tmp/DirAux/. Javadoc/
 
