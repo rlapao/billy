@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Billy by Premium Minds</title>
+  	<title>Billy</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
   	<link href="stylesheets/bootstrap.css" rel="stylesheet">
@@ -23,24 +23,16 @@
             <ul class="nav">
               <li><a class="brand" href="index.html">Billy</a></li>
               <li><a href="getStarted.html">How to get Started</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribution <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                	<li><a href="developmentContribution.html">Development Contribution</a></li>
-                  	<li><a href="reportBugs.html">Report Bugs</a></li>
-                  	<li><a href="mailingLists.html">Mailing Lists</a></li>
-                </ul>
-              </li>
-              
+              <li><a href="developmentContribution.html" class="active">Contribution</a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   	<li><a href="documents.html">Documents</a></li>
-					<li><a href="examples.html">Examples</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="license.html">Licence</a></li>
+          					<li><a href="examples.html">Examples</a></li>
+          					<li><a href="faq.html">FAQ</a></li>
                 </ul>
               </li>
+              <li><a href="license.html">License</a></li>
               <li><a href="goals.html">Purpose, Goals, Roadmap</a></li>
               <li><a href="contacts.html">Contacts</a></li>
             </ul>
@@ -65,29 +57,20 @@
           <div class="page-header">
             <h3>Getting Started</h3>
 
-            A complete <a href="getStarted.html">getting started</a> guide is available, but for those looking to start running quickly, make sure you have installed <a href="http://www.java.com/en/">Java 7</a>, at least <a href="http://www.postgresql.org/">Postgres 9.1</a>, <a href="http://git-scm.com/">Git</a>, and <a href="http://maven.apache.org/">Maven 2</a>.
+            A complete <a href="getStarted.html">getting started</a> guide is available, but for those looking to contribute for the project, make sure you have installed <a href="http://www.java.com/en/">Java 6</a>, <a href="http://git-scm.com/">Git</a>, and <a href="http://maven.apache.org/">Maven 2</a>.
             <br><br>
               <section>
-                <b>Download</b>
-                <p> After you have all the necessary software, you need to download the Billy application. To do that you have two options: <br>
-                (To get the project you must have to be registered at <a href="http://git-scm.com/">Git</a>)
-                 <ol>
-                    <li>Download the latest stable release as a zip file from <a href="https://github.com/premium-minds/billy">Billy's GitHub</a></li>
-                    <li>Clone the git repository:
-                    </li>
-                  </ol>
-                      <pre>$ git clone https://github.com/premium-minds/billy.git</pre> and checkout the release that you want.
-                 </p>  
+                <b>Maven Dependency</b><br>
+                <p> After you have all the necessary software, you need to add Bill's Maven dependency to the pom.xml file of your project. To do that you just add: <br>
+                  <pre>
+                    &ltdependency&gt
+                            &ltgroupId&gtcom.premiumminds&lt/groupId&gt
+                            &ltartifactId&gtbilly&lt/artifactId&gt
+                            &ltversion&gt${billy.version}&lt/version&gt
+                    &lt/dependency&gt
+                    </pre>
+                 </p> 
               </section>
-
-              <section>
-                <b>Install</b>
-                <p>To install Billy, go the folder that you have just downloaded, build the project and inside of each folder from Billy's execute:<br>
-                  <pre>$ mvn install</pre>
-
-                  After doing this you may start to develop your application, using Billy.
-                </p>
-              </section>        
         </section>
   	
   	<footer>

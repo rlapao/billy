@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Billy by Premium Minds</title>
+  	<title>Billy</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
   	<link href="stylesheets/bootstrap.css" rel="stylesheet">
@@ -23,24 +23,16 @@
             <ul class="nav">
               <li><a class="brand" href="index.html">Billy</a></li>
               <li><a href="getStarted.html">How to get Started</a></li>
-              <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribution <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                	<li><a href="developmentContribution.html">Development Contribution</a></li>
-                  	<li><a href="reportBugs.html">Report Bugs</a></li>
-                  	<li><a href="mailingLists.html">Mailing Lists</a></li>
-                </ul>
-              </li>
-              
+              <li  class="active"><a href="developmentContribution.html">Contribution</a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   	<li><a href="documents.html">Documents</a></li>
-					<li><a href="examples.html">Examples</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="license.html">Licence</a></li>
+          					<li><a href="examples.html">Examples</a></li>
+          					<li><a href="faq.html">FAQ</a></li>
                 </ul>
               </li>
+              <li><a href="license.html">License</a></li>
               <li><a href="goals.html">Purpose, Goals, Roadmap</a></li>
               <li><a href="contacts.html">Contacts</a></li>
             </ul>
@@ -48,11 +40,55 @@
         </div>
       </div>
     </div>
-  	
+
   	<div class="container">
-  	<h1>Development Contribution</h1>
-  		
-  	<p> Instructions on how to contribute through development and how to make pull and merge requests</p> 
+  	<section>
+      <h1>Development Contribution</h1>
+    		
+    	<p> Instructions on how to contribute through development and how to make pull and merge requests</p>
+
+      <p>For issues with the Billy application you should submit your bug report to the <a href="https://github.com/premium-minds/billy/issues">Billy Issue tracker</a></p>
+
+      <p>
+        <h3>Rules to bug reporting</h3>
+          <ul class="unstyled">
+          <li><b>1. You should check if the bug has already been reported</b>, to avoid duplicated issues, and check if the problem has already been solved.</li>
+          <li><b>2. The issue must be labeled.</b></li>
+          <li><b>3. Create an isolated and reproducible test case,</b> where shows the steps that led to the problem occur.</li>
+          <li><b>4. Share as much information as possible,</b> like your operating system and version, the version of Billy, and other information that you think important.</li>
+          </ul>
+      </p>
+
+        <h3>Contribute</h3>
+      
+        <p> If you want to contribute to the project development you can download Billy from <a href="https://github.com/premium-minds/billy">Billy's GitHub</a> (to download Billy you must have to be registered at <a href="http://git-scm.com/">Git</a>)<br>
+        There are two ways to get Billy:<br>
+                <ol>
+                  <li>Download the latest stable release,as a zip file from <a href="https://github.com/premium-minds/billy.git" >Billy's GitHub</a>, and unzip to the folder that you want</li>
+                  <li>Or you can clone the repository through the command line:</li>
+                </ol>
+                <pre>$ git clone https://github.com/premium-minds/billy.git</pre>
+
+        <h4>Install Billy</h4>
+
+        <p>To install Billy go to each billy's folder(core, jpa, gin and platypus) and execute the following steps:<br>
+                <ol>
+                  <li>Enter in the billy-&ltproject&gt folder:<pre>$ cd billy-&ltproject&gt</pre></li>
+                  <li>
+                    Compile, execute the tests and install billy-&ltproject&gt in a local repository.
+                    <ul class="unstyled">
+                      <li>2.1 Build the project: <pre>$ mvn compile</pre></li>
+                      <li>2.2 Compile and run the project tests: <pre>$ mvn test</pre></li>
+                      <li>2.3 Build the project jar: <pre>$ mvn package</pre></li>
+                      <li>2.4 Install the project jar in a local repository: <pre>$ mvn install</pre>
+                    <ul>
+                  </li>
+                <ol>
+
+              </p>
+
+      </p>
+    </section>
   	<hr>
   	
   	<footer>
