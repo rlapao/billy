@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Billy</title>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
-  	<link href="stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="stylesheets/docs.css" rel="stylesheet">
-  	<style type="text/css">
-	      body {
-		padding-top: 60px;
-		padding-bottom: 40px;
-	      }
-      </style>
-  
-  </head>
-  <body>
-  	<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a class="brand" href="index.html">Billy</a></li>
-              <li><a href="getStarted.html">How to get Started</a></li>
-              <li><a href="developmentContribution.html" class="active">Contribution</a></li>
-              <li class="dropdown ">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  	<li><a href="documents.html">Documents</a></li>
-          					<li><a href="examples.html">Examples</a></li>
-          					<li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </li>
-              <li><a href="license.html">License</a></li>
-              <li><a href="goals.html">Purpose, Goals, Roadmap</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <head>
+        <title>Billy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <link href="stylesheets/bootstrap.css" rel="stylesheet">
+        <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
+        <link href="stylesheets/docs.css" rel="stylesheet">
+        <style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+        </style>
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a class="brand" href="index.html">Billy</a>
+                            </li>
+                            <li>
+                                <a href="getStarted.html">How to get Started</a>
+                            </li>
+                            <li>
+                                <a href="developmentContribution.html" class="active">Contribution</a>
+                            </li>
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="documents.html">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="examples.html">Examples</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="license.html">License</a>
+                            </li>
+                            <li>
+                                <a href="goals.html">Purpose, Goals, Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  	
-  	<div class="container">
-  		<h1>Billy</h1>
-      <br>
-  		<p>
-      Billy is an open source Java library developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>. Its aim is to provide applications for creating and managing invoices, and credit notes, as well allowing their export to different file types. Billy also allows the creation and export of SAF-T PT(Standard Audit File for Tax purposes portuguese version) files.
-      </p>
-      <p>
-      Billy is currently at version 1.0, and is now available to the open source community.
-      </p>
-      <br>
-      <p class="text-error"> <b>Billy is currently still being developed, so it may still contain errors!</b> </p>
 
-        <section id="getting-started">
-          <div class="page-header">
-            <h3>Getting Started</h3>
+        <div class="container">
+            <h1>Billy</h1>
+            <br>
+            <p>
+                Billy is an open source Java library developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>.
+                Billy's aim is to be a certified billing library for applications providing the ability to create,
+                manage, store and export of billing related artifacts such as invoices and credit notes.
+                Billy supports the creation and exportation of SAF-T PT files (Standard Audit File for Tax - Portuguese version).
+            </p>
+            <p>
+                Billy is currently at version 1.0, and is now available to the open source community.
+            </p>
+            <p class="text-error">
+                <b>Billy is currently being developed, use at your own risk!</b>
+            </p>
+            <section id="getting-started">
+                <div class="page-header">
+                    <h3>Getting Started</h3>
+                    <p>
+                        A complete <a href="getStarted.html">get started guide</a> is available, but for those looking to contribute for the project, make sure you have installed <a href="http://www.java.com/en/">Java 6</a>, <a href="http://git-scm.com/">Git</a>, and <a href="http://maven.apache.org/">Maven 2</a>.
+                    </p>
+                    <section id="maven-dep">
+                        <b>Maven Dependency</b>
+                        <p>
+                            After you have all the necessary software, you need to add Bill's Maven dependency to the pom.xml file of your project. To do that you just add:
+                            <pre>&lt;dependency&gt;
+    &lt;groupId&gt;com.premiumminds&lt;/groupId&gt;
+    &lt;artifactId&gt;billy&lt;/artifactId&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+                        </p>
+                    </section>
+            </section>
 
-            A complete <a href="getStarted.html">getting started</a> guide is available, but for those looking to contribute for the project, make sure you have installed <a href="http://www.java.com/en/">Java 6</a>, <a href="http://git-scm.com/">Git</a>, and <a href="http://maven.apache.org/">Maven 2</a>.
-            <br><br>
-              <section>
-                <b>Maven Dependency</b><br>
-                <p> After you have all the necessary software, you need to add Bill's Maven dependency to the pom.xml file of your project. To do that you just add: <br>
-                  <pre>
-&ltdependency&gt
-        &ltgroupId&gtcom.premiumminds&lt/groupId&gt
-        &ltartifactId&gtbilly&lt/artifactId&gt
-        &ltversion&gt${billy.version}&lt/version&gt
-&lt/dependency&gt
-                    </pre>
-                 </p> 
-              </section>
-        </section>
-  	
-  	<footer>
-  		<p> Developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a></p>
-  	</footer>
-  	</div>	
-  	<script src="http://code.jquery.com/jquery.js"></script>
-    <script src="javascripts/bootstrap.js"></script>
-  </body>
+            <footer>
+                <p>
+                    Developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>
+                </p>
+            </footer>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="javascripts/bootstrap.js"></script>
+    </body>
 </html>
