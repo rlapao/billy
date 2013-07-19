@@ -1,100 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Billy</title>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-sacle=1.0">
-  	<link href="stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="stylesheets/docs.css" rel="stylesheet">
-  	<style type="text/css">
-	      body {
-		padding-top: 60px;
-		padding-bottom: 40px;
-	      }
-      </style>
+    <head>
+        <title>Billy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+        <link href="stylesheets/bootstrap.css" rel="stylesheet">
+        <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
+        <link href="stylesheets/docs.css" rel="stylesheet">
+        <style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+        </style>
 
-  </head>
-  <body>
-  	<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a class="brand" href="index.html">Billy</a></li>
-              <li><a href="getStarted.html">How to get Started</a></li>
-              <li><a href="developmentContribution.html">Contribution</a></li>
-              <li class="dropdown active">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  	<li><a href="documents.html">Documents</a></li>
-          					<li><a href="examples.html">Examples</a></li>
-          					<li><a href="faq.html">FAQ</a></li>
-                </ul>
-              </li>
-              <li><a href="license.html">License</a></li>
-              <li><a href="goals.html">Purpose, Goals, Roadmap</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a class="brand" href="index.html">Billy</a>
+                            </li>
+                            <li>
+                                <a href="getStarted.html">How to get Started</a>
+                            </li>
+                            <li>
+                                <a href="developmentContribution.html">Contribution</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="documents.html">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="examples.html">Examples</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="license.html">License</a>
+                            </li>
+                            <li>
+                                <a href="goals.html">Purpose, Goals, Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-		<div class="container">
-			<h1>Frequently Asked Questions</h1>
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
 
-			<div class="question">
-				<h3>What is a SAF-T file?</h3>
-				<p>
-					The Standard Audit File for Tax (SAF-T) is an international normalized file in XML format, for exchanging reliable
-					accounting data from organizations to the national tax authority or external auditors. The Standard is defined by the
-					<a href="http://www.oecd.org/">Organization for Economic Cooperation and Development (OECD)</a> and it enables
-					auditors to access accounting data in an easy readable format.
-					The SAF-T file incorporates exported accounting data from an accounting system
-					for a given time period and by due to its uniform layout and
-					format it's easily readable and extensible.
-					It has been widely adopted in Europe, being extended as needed by each country in order to comply with its
-					policies and legislations.
-				</p>
-			</div>
+            <div class="question">
+                <h3>What is a SAF-T file?</h3>
+                <p>
+                    The Standard Audit File for Tax (SAF-T) is an international normalized file in XML format, for exchanging reliable
+                    accounting data from organizations to the national tax authority or external auditors. The Standard is defined by the
+                    <a href="http://www.oecd.org/">Organization for Economic Cooperation and Development (OECD)</a> and it enables
+                    auditors to access accounting data in an easy readable format.
+                    The SAF-T file incorporates exported accounting data from an accounting system
+                    for a given time period and by due to its uniform layout and
+                    format it's easily readable and extensible.
+                    It has been widely adopted in Europe, being extended as needed by each country in order to comply with its
+                    policies and legislation.
+                </p>
+            </div>
 
-			<div class="question">
+            <div class="question">
                 <h3>What SAF-T formats are currently supported by <a href="http://premium-minds.github.io/billy">Billy</a>?</h3>
-                <p>In addition to the
-                    <a href="http://www.oecd.org/ctp/administration/guidancenote-guidancefordevelopersofbusinessandaccountingsoftwareconcerningtaxauditrequirements.htm">OECD</a>
+                <p>
+                    In addition to the <a href="http://www.oecd.org/ctp/administration/guidancenote-guidancefordevelopersofbusinessandaccountingsoftwareconcerningtaxauditrequirements.htm">OECD</a>
                     standard, <a href="http://premium-minds.github.io/billy">Billy</a> currently supports the Portuguese format SAF-T (PT).
-                    <br/> You can read more about it <a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/NEWS_SAF-T_PT.htm">here.</a>
+                    <br/>
+                    You can read more about it <a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/NEWS_SAF-T_PT.htm">here.</a>
                 </p>
             </div>
 
             <div class="question">
                 <h3>How can you add a new SAF-T format?</h3>
-                <p>To add a new SAF-T you must extend the
+                <p>
+                    To add a new SAF-T you must extend the
                     <a href="http://www.oecd.org/ctp/administration/guidancenote-guidancefordevelopersofbusinessandaccountingsoftwareconcerningtaxauditrequirements.htm">OECD</a>
-                    SAF-T to comply with the country's legislations and policies.
-                    This is done by creating a new module that extends the billy-core module which defindes de OECD standard.
+                    SAF-T to comply with the country's legislation and policies.
+                    This is done by creating a new module that extends the billy-core module which implementsim the OECD standard.
                 </p>
             </div>
 
-			<div class="question">
-				<h3>Does <a href="http://premium-minds.github.io/billy">Billy</a> uses continuous integration?</h3>
-				<p>
-					Yes, <a href="http://premium-minds.github.io/billy">Billy</a> uses <a href="https://travis-ci.org/">Travis CI</a>. It's a free continuous integration platform
-					for the open source community.
-					Each time a push is made to <a href="http://premium-minds.github.io/billy">Billy's</a> repository at <a href="https://github.com/premium-minds/Billy">GitHub</a>, <a href="https://travis-ci.org/">Travis CI</a> clones the repository and runs all tests automatically.
-					The results are displayed in the end.
-				</p>
-			</div>
+            <div class="question">
+                <h3>Is <a href="http://premium-minds.github.io/billy">Billy</a> a certified library?</h3>
+                <p>
+                    No, <a href="http://premium-minds.github.io/billy">Billy</a> isn't certified in any way. Applications using <a href="http://premium-minds.github.io/billy">Billy</a> should seek the certification authority in their country to legally certify their product.
+                </p>
+            </div>
 
-			<hr>
-			<footer>
-				<p>
-					Developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>
-				</p>
-			</footer>
-		</div>
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="javascripts/bootstrap.js"></script>
-	</body>
+            <div class="question">
+                <h3>Does <a href="http://premium-minds.github.io/billy">Billy</a> uses continuous integration?</h3>
+                <p>
+                    Yes, <a href="http://premium-minds.github.io/billy">Billy</a> uses <a href="https://travis-ci.org/">Travis CI</a>. It's a free continuous integration platform
+                    for the open source community.
+                    Each time a push is made to <a href="http://premium-minds.github.io/billy">Billy's</a> repository at <a href="https://github.com/premium-minds/Billy">GitHub</a>, <a href="https://travis-ci.org/">Travis CI</a> clones the repository and runs all tests automatically.
+                    The results are displayed in the end.
+                </p>
+            </div>
+
+            <hr>
+            <footer>
+                <p>
+                    Developed by <a href="http:\\wwww.premium-minds.com">Premium Minds</a>
+                </p>
+            </footer>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="javascripts/bootstrap.js"></script>
+    </body>
 </html>
