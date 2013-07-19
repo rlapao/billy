@@ -13,7 +13,7 @@
 		padding-bottom: 40px;
 	      }
       </style>
-  
+
   </head>
   <body>
   	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -45,25 +45,44 @@
 			<h1>Frequently Asked Questions</h1>
 
 			<div class="question">
-				<h2>What is a SAF-T file?</h2>
+				<h3>What is a SAF-T file?</h3>
 				<p>
-					Standard Audit File for Tax (SAF-T) is an international normalized file in XML format, for exchanging reliable 
+					The Standard Audit File for Tax (SAF-T) is an international normalized file in XML format, for exchanging reliable
 					accounting data from organizations to the national tax authority or external auditors. The Standard is defined by the
-					<a href="http://www.oecd.org/">Organization for Economic Cooperation and Development (OCED)</a> and it enables
+					<a href="http://www.oecd.org/">Organization for Economic Cooperation and Development (OECD)</a> and it enables
 					auditors to access accounting data in an easy readable format.
-					SAF-T incorporates exported accounting data from an original accounting system,
-					for a given time period and by virtue of its uniform layout and
-					format it's easily readable and extensible according to need.
-					It has been widely adopted in Europe, being extended as needed in respect of
-					the policy, legislation and administration of each country.
+					The SAF-T file incorporates exported accounting data from an accounting system
+					for a given time period and by due to its uniform layout and
+					format it's easily readable and extensible.
+					It has been widely adopted in Europe, being extended as needed by each country in order to comply with its
+					policies and legislations.
 				</p>
 			</div>
+
 			<div class="question">
-				<h2>Does Billy uses continuous integration?</h2>
+                <h3>What SAF-T formats are currently supported by <a href="http://premium-minds.github.io/billy">Billy</a>?</h3>
+                <p>In addition to the
+                    <a href="http://www.oecd.org/ctp/administration/guidancenote-guidancefordevelopersofbusinessandaccountingsoftwareconcerningtaxauditrequirements.htm">OECD</a>
+                    standard, <a href="http://premium-minds.github.io/billy">Billy</a> currently supports the Portuguese format SAF-T (PT).
+                    <br/> You can read more about it <a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/NEWS_SAF-T_PT.htm">here.</a>
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>How can you add a new SAF-T format?</h3>
+                <p>To add a new SAF-T you must extend the
+                    <a href="http://www.oecd.org/ctp/administration/guidancenote-guidancefordevelopersofbusinessandaccountingsoftwareconcerningtaxauditrequirements.htm">OECD</a>
+                    SAF-T to comply with the country's legislations and policies.
+                    This is done by creating a new module that extends the billy-core module which defindes de OECD standard.
+                </p>
+            </div>
+
+			<div class="question">
+				<h3>Does <a href="http://premium-minds.github.io/billy">Billy</a> uses continuous integration?</h3>
 				<p>
-					Yes, Billy uses <a href="https://travis-ci.org/">Travis CI</a>. It's a free continuous integration platform
+					Yes, <a href="http://premium-minds.github.io/billy">Billy</a> uses <a href="https://travis-ci.org/">Travis CI</a>. It's a free continuous integration platform
 					for the open source community.
-					Each time a push is made to Billy's repository at GitHub, Travis clones the repository and runs all tests automatically.
+					Each time a push is made to <a href="http://premium-minds.github.io/billy">Billy's</a> repository at <a href="https://github.com/premium-minds/Billy">GitHub</a>, <a href="https://travis-ci.org/">Travis CI</a> clones the repository and runs all tests automatically.
 					The results are displayed in the end.
 				</p>
 			</div>
