@@ -63,16 +63,26 @@
             <h1>Frequently Asked Questions</h1>
 
             <div class="question">
-                <h3>Which documents does Billy supports?</h3>
+                <h3>What is Billy?</h3>
+                <p>
+                   Billy is an open source Java library which aims to provide applications with the ability to create and manage invoices.
+                   One of the main goals, is the ability to export the invoices in different formats, such as SAF-T and pdf.
+                   It's buid in a modular way in order to support additional country legislation, new billing artifacts as well as new export mechanisms.
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Which documents does Billy support?</h3>
                 <p>
                     Billy supports invoices, simplified invoices, credit notes and SAF-T (PT)
                 </p>
             </div>
 
             <div class="question">
-                <h3>Which are the differences between invoices and simplified invoices?</h3>
+                <h3>What is the difference between an invoice and a simplified invoice?</h3>
                 <p>
-                    In Portugal, for customers, simplified invoices only contain the Tax Registration Number. The customers' address isn't mandatory. Suppliers only need to present its company name and its Tax Registration Number.
+                    Simplfied invoices are a type of inovoice that only contain the Tax Registration Number of the customer. In this type of invoice the customers' address isn't mandatory and
+                    therefore suppliers only need to include its company name and Tax Registration Number.
                 </p>
             </div>
 
@@ -86,7 +96,7 @@
             <div class="question">
                 <h3>How is data persisted?</h3>
                 <p>
-                    At the moment it uses JPA (Java Persistence API) implemented in billy-core-jpa. However, it's prepared to be extended with new APIs.
+                    At the moment billy uses JPA (Java Persistence API) implemented in billy-core-jpa. However, it's prepared to be extended with new APIs.
                 </p>
             </div>
 
