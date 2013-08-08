@@ -251,8 +251,14 @@
 				</p>
             </div>
 
-            <div>
 
+            <div class="question">
+                <h4>How do I change the invoice PDF template?</h4>
+                <p>
+                The structure of the invoice PDF template must be defined in <a href="http://www.w3.org/Style/XSL/">XSL</a>,and the location of that template file must be passed to the billy pdf generation, when you want to export an invoice.
+                <b>Note:</b> The names in the XSL entries in the template must be the same that billy generator expects, otherwise the PDF wont't be generated. If you want to add new entries you must extends the generator to fill the new fields.
+                </p>
+            </div>
 
             <hr>
             <footer>
