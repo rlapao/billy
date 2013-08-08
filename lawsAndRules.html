@@ -64,18 +64,21 @@
             <h1>Laws and Financial Rules</h1>
 
              <div class="section">
-                <h4>OECD SAFT</h4>
+                <h4>OECD SAFT-T</h4>
                 <p>
-                Check what is a Standart Audit File for Tax Purposes:
+                The SAFT-T(Standard Audit File for Tax purposes) is an international standard for electronic exchange of accounting data from companies and organizations with the national tax autority.  This standard file is defined by OECD (Organisation for Economic Co-operation and Development), but each country adopts his own SAFT-T file, which is an extension to the OECD file.
+                <br>
+                For more information you should check the following links:
                 <ul>
-                    <li><a href="http://en.wikipedia.org/wiki/SAF-T">SAFT definition</a></li>
+                    <li><a href="http://en.wikipedia.org/wiki/SAF-T">SAFT-T definition</a></li>
                     <li><a href="http://www.oecd.org/tax/administration/45167181.pdf">SAFT OECD structure</a></li>
                 </ul>
                 </p>
                 <h4> Portuguese Law and Financial rules</h4>
 
                 <b>Software Certification</b><br>
-                If you want to know more about how to certificate billing software, check the following links:
+                The portuguese law about billing software demands that companies with a large volume of billing must use a certified software to process that information. The software must export the SAFT-T PT, invoices, simple invoices, credit notes and debit notes. The software must save all the documents that export, and sign each document with a private key that must only be know by the company that produces the software.<br> 
+                For more information check the following links:
                 <ul>
                     <li><a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/CertificacaoSoftware.htm">Portuguese Software Certification page</a></li>
                     <li><a href="http://info.portaldasfinancas.gov.pt/NR/rdonlyres/8C23078D-3B1F-45EE-9D02-C01C2DCA6949/0/portaria22A2012.pdf">Software Certification Law</a></li>
@@ -83,19 +86,25 @@
                
                 <b> Portuguese SAFT </b>
                 <p>
-                    The portuguese SAFT is an extension to OECD SAFT file, you can check it's structure and laws in the folowing links:
+                    The portuguese SAFT is an extension to OECD SAFT file, which add new entries to the OECD file, like the software certification id, or the invoice status, for mot information you should see the following links:
                     <ul>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/NEWS_SAF-T_PT.htm">SAFT-PT page</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/NR/rdonlyres/4CA657D7-EEA6-4078-9157-8E837DFF4AE1/0/Portarian160_2013_23_04.pdf">SAFT-PT legislation</a></li>
-                    <li><a href="http://www.oecd.org/tax/administration/45167181.pdf">SAFT-PT structure</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/NR/rdonlyres/60461985-58EC-4E4B-BCCC-F5B561C94629/0/Of%C3%ADcio%20Circulado%20n_50001.pdf">SAFT-PT requirements</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt02/local/validador_v1_02.exe">SAFT-PT validator</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt01/">SAFT-PT simple invoice validator</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt01/SAFTPT1.01_01.xsd">XSD file</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/iva36.htm">Portuguese invoices requirements</a></li>
-                    <li><a href="http://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/iva40.htm">Portuguese simple invoice</li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/NEWS_SAF-T_PT.htm">SAFT-PT page</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/NR/rdonlyres/4CA657D7-EEA6-4078-9157-8E837DFF4AE1/0/Portarian160_2013_23_04.pdf">Portuguese billing legislation</a></li>
+                        <li><a href="http://www.oecd.org/tax/administration/45167181.pdf">SAFT-PT structure</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/NR/rdonlyres/60461985-58EC-4E4B-BCCC-F5B561C94629/0/Of%C3%ADcio%20Circulado%20n_50001.pdf">SAFT-PT requirements</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt01/SAFTPT1.01_01.xsd">XSD file</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/iva36.htm">Portuguese invoices requirements</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/iva40.htm">Portuguese simple invoice</a></li>
                     </ul>
-                
+
+                    <b> SAFT-PT validators</b>
+                    <ul>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt02/">SAFT-PT online validator</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt01/">SFAT-PT online validator for simple invoice</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt02/local/validador_v1_02.exe">SAFT-PT validator</a></li>
+                        <li><a href="http://info.portaldasfinancas.gov.pt/apps/saft-pt01/">SAFT-PT simple invoice validator</a></li>
+                    </ul>
+                    <b>Note:</b> the online validators only validate the xml file, not the calculations or the hash. if you want to validate more than</br> the xml structure you should use the executable validators listed above.
                 </p>
             </div>
 
