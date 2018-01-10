@@ -28,4 +28,6 @@ billy-spain/src/main/filters/*.properties
 
 billy-core-ebean/db-create-all.sql
 billy-core-ebean/db-drop-all.sql
+billy-portugal-ebean/db-create-all.sql
+billy-portugal-ebean/db-drop-all.sql
 

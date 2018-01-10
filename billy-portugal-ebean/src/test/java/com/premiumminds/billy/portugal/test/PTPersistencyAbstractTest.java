@@ -18,7 +18,6 @@
  */
 package com.premiumminds.billy.portugal.test;
 
-import org.junit.After;
 import org.junit.Before;
 
 import com.google.inject.Guice;
@@ -45,16 +44,9 @@ public class PTPersistencyAbstractTest extends PTAbstractTest {
 
     @Before
     public void setUpModules() {
-        PTAbstractTest.injector =
-                Guice.createInjector(new PortugalDependencyModule(), new PortugalTestPersistenceDependencyModule());
+        PTAbstractTest.injector = Guice.createInjector(new PortugalDependencyModule());
         PTAbstractTest.injector.getInstance(PortugalDependencyModule.Initializer.class);
-        PTAbstractTest.injector.getInstance(PortugalTestPersistenceDependencyModule.Initializer.class);
         PortugalBootstrap.execute(PTAbstractTest.injector);
-    }
-
-    @After
-    public void tearDown() {
-        PTAbstractTest.injector.getInstance(PortugalTestPersistenceDependencyModule.Finalizer.class);
     }
 
     public PTInvoiceEntity getNewIssuedInvoice() {
