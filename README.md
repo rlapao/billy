@@ -1,6 +1,6 @@
 # Billy's web page
-Check it out [here](http://premium-minds.github.io/billy/)
+Check it out [here](https://premium-minds.github.io/billy/)
 ## Licence
-Copyright (C) 2013 [Premium Minds](http://www.premium-minds.com/)
+Copyright (C) 2013 [Premium Minds](https://www.premium-minds.com/)
 
-Licensed under the [GNU Lesser General Public Licence](http://www.gnu.org/licenses/lgpl.html)
+Licensed under the [GNU Lesser General Public Licence](https://www.gnu.org/licenses/lgpl.html)
