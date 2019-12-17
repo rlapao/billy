@@ -231,7 +231,7 @@ addressBuilder.setStreetName("Av. 5 de Outubro")
                 Again create and populate the product builder:
                 <pre><code class="java">PTProduct.Builder productBuilder = billyPortugal.products().builder();
 
-productBuilder.setDescription(description)
+productBuilder.setDescription("description 1")
               .setNumberCode("1")
               .setProductCode("1")
               .setType(ProductType.GOODS)
@@ -239,7 +239,7 @@ productBuilder.setDescription(description)
               .addTaxUID(billyPortugal.taxes().continent().normal().getUID());</code></pre>
 
                 Persiste the product:
-                <pre><code class="java">PTProduct product = billyPortugal.products().persistence().create(product);</code></pre>
+                <pre><code class="java">PTProduct product = billyPortugal.products().persistence().create(productBuilder);</code></pre>
 
                 Now add the product to the invoice entry:
                 <pre><code class="java">entryBuilder.setProductUID(product.getUID())
@@ -267,14 +267,14 @@ productBuilder.setDescription(description)
 
 invoiceParameters.setPrivateKey(gen.getPrivateKey());
 invoiceParameters.setPublicKey(gen.getPublicKey());
-invoiceParameters.setSeries("New Series");</code></pre>
+invoiceParameters.setInvoiceSeries("New Series");</code></pre>
                 </p>
 
                 <h3>Issuing the document</h3>
 
                 <p>
                 After defining the all the parameters you simply issue the document:
-                <pre><code class="java">billyPortugal.invoices().issue(invoiceBuilder, invoiceParameters);</code></pre>
+                <pre><code class="java">PTInvoice invoice = billyPortugal.invoices().issue(invoiceBuilder, invoiceParameters);</code></pre>
                 </p>
 
                 <h2>SAFT-T export service</h2>
