@@ -76,7 +76,7 @@
                     manage, store and export billing related artifacts such as invoices and credit notes.
                     Billy supports the creation and exportation of SAF-T files (Standard Audit File for Tax).
                     <br>
-                    Billy is currently at version 1.0, and is now available to the open source community.
+                    Billy is currently at version 3.1.2, and is now available to the open source community.
                 </p>
                 </div>
 
@@ -95,7 +95,7 @@
 <pre><code class="xml">&lt;dependency&gt;
     &lt;groupId&gt;com.premiumminds&lt;/groupId&gt;
     &lt;artifactId&gt;billy-portugal&lt;/artifactId&gt;
-    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+    &lt;version&gt;3.1.2&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
                 Check out <a href="https://oss.sonatype.org/index.html#nexus-search;quick~billy">sonatype repository</a> for latest snapshots and releases.
                 </p>
@@ -152,6 +152,9 @@ contactBuilder.setName("Bob Conner")
               <pre><code class="java">applicationBuilder.addContact(contactBuilder)
                   .setMainContact(contactBuilder);</code></pre>
                 </p>
+
+                <p>And finally persist the application builder to Billy's database</p>
+                <pre><code class="java">PTApplication application = billyPortugal.applications().persistence().create(applicationBuilder);</code></pre>
 
                 <h2>Creating a new invoice</h2>
 
@@ -279,7 +282,7 @@ productBuilder.setDescription(description)
 
                 <p>
                 This encapsulates the needed parameters to issue your invoice, such as PrivateKey, PublicKey, Series, etc.
-                <pre><code class="java">PTIssuingParams paramaters = PTIssuingParams.Util.newInstance();</code></pre>
+                <pre><code class="java">PTIssuingParams invoiceParameters = PTIssuingParams.Util.newInstance();</code></pre>
 
                 You can use the provided KeyGenerator to generate your keys.
                 <pre><code class="java">KeyGenerator gen = new KeyGenerator("private/key/dir/pkey.pem");
@@ -293,7 +296,7 @@ invoiceParameters.setSeries("New Series");</code></pre>
 
                 <p>
                 After defining the all the parameters you simply issue the document:
-                <pre><code class="java">billyPortugal.invoices().issue(invoiceBuilder, paramaters);</code></pre>
+                <pre><code class="java">billyPortugal.invoices().issue(invoiceBuilder, invoiceParameters);</code></pre>
                 </p>
 
                 <h2>SAFT-T export service</h2>
@@ -307,7 +310,7 @@ Date startDate = dateFormat.parse("01-01-2013");
 Date endDate = dateFormat.parse("01-02-2013");
 
 billyPortugal.saft().export(application.getUID(), business.getUID(),
-        "Certification Number", startDate, endDate);</code></pre>
+        "Certification Number", startDate, endDate, PTSAFTFileGenerator.SAFTVersion.CURRENT);</code></pre>
                 </p>
 
                 <h2>Export invoice to PDF</h2>
