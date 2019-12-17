@@ -245,9 +245,9 @@ addressBuilder.setStreetName("Av. 5 de Outubro")
                 <pre><code class="java">entryBuilder.setAmountType(AmountType.WITH_TAX)
                     .setCurrency(Currency.getInstance("EUR"))
                     .setContextUID(billyPortugal.contexts().portugal().allRegions().getUID())
-                    .setQuantity("10")
+                    .setQuantity(new BigDecimal("10"))
                     .setTaxPointDate(new Date())
-                    .setUnitAmount(AmountType.WITH_TAX, "100");</code></pre>
+                    .setUnitAmount(AmountType.WITH_TAX, new BigDecimal("100"));</code></pre>
                 </p>
 
                 <h4>Creating a new Product</h4>
@@ -308,7 +308,7 @@ invoiceParameters.setSeries("New Series");</code></pre>
                 You can export the SAF-T(PT) xml file containing all the billing information for an application and a business during a given period. You'll need to specify the application's and the business's UID, the certificate number for the SAF-T(PT) file and the period of time that you wish to export.
 
                 <pre><code class="java">// one month period
-SimpleDateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
+SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 Date startDate = dateFormat.parse("01-01-2013");
 Date endDate = dateFormat.parse("01-02-2013");
 
